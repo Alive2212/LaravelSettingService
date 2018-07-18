@@ -13,7 +13,7 @@
     "keywords": ["Laravel", "LaravelSettingService"],
     "require": {
         "illuminate/support": "~5",
-        "composer require phoenix/eloquent-meta": "^1.*",
+        "composer require phoenix/eloquent-meta": "^1",
         "alive2212/laravel-smart-restful": "^1.0"
 
     },
