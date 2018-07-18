@@ -4,15 +4,16 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Babak Nodoust",
+            "email": "alive2212@yahoo.com",
+            "homepage": "http://babakn.com"
         }
     ],
     "homepage": "https://github.com/alive2212/laravelsettingservice",
     "keywords": ["Laravel", "LaravelSettingService"],
     "require": {
         "illuminate/support": "~5",
+        "composer require phoenix/eloquent-meta": "^1.*",
         "alive2212/laravel-smart-restful": "^1.0"
 
     },
