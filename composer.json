@@ -1,0 +1,44 @@
+{
+    "name": "alive2212/laravelsettingservice",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/alive2212/laravelsettingservice",
+    "keywords": ["Laravel", "LaravelSettingService"],
+    "require": {
+        "illuminate/support": "~5",
+        "alive2212/laravel-smart-restful": "^1.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "peterpetrus/passport-token": "*",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alive2212\\LaravelSettingService\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alive2212\\LaravelSettingService\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alive2212\\LaravelSettingService\\LaravelSettingServiceServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSettingService": "Alive2212\\LaravelSettingService\\Facades\\LaravelSettingService"
+            }
+        }
+    }
+}
