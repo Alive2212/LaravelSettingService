@@ -9,11 +9,6 @@ use PeterPetrus\Auth\PassportToken;
 class LaravelSettingService
 {
     /**
-     * @var
-     */
-    public static $loggedInAt;
-
-    /**
      * @var bool
      */
     public static $isSettingPublished = false;
@@ -45,19 +40,6 @@ class LaravelSettingService
         if (!is_null($scope)) {
             $this->scope = $scope;
         }
-    }
-
-    /**
-     * @param Request $request
-     * @return $this
-     */
-    public function getUserInfo(Request $request)
-    {
-        $bearerToken = $request->bearerToken();
-        $decodedBearerToken = PassportToken::dirtyDecode($bearerToken);
-        $createdAtTime = Carbon::createFromTimestamp($decodedBearerToken['created_at_unix']);
-        self::$loggedInAt = $createdAtTime;
-        return $this;
     }
 
     /**
@@ -181,7 +163,7 @@ class LaravelSettingService
                     'key' => $paramKey,
                     'value' => $paramValue,
                     'extra_value' => $extraValue,
-                    'scope' => $scope,
+                    'scope' => json_encode($scope),
                     'revoked' => $revoked,
                 ]));
         }

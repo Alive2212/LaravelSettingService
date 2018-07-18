@@ -16,6 +16,20 @@ $ composer require alive2212/laravelsettingservice
 ```
 
 ## Usage
+To store setting metas
+```php
+$setting->store([
+    'test.controller.app' => '1',
+],auth()->id(),null,['operators']);
+```
+
+To get setting metas
+```php
+return $setting
+    ->setStartDateTime(Carbon::now()->addYears(-1))
+    ->setScope('operator')
+    ->getArray();
+```
 
 ## Change log
 
