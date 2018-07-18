@@ -1,7 +1,7 @@
 {
     "name": "alive2212/laravelsettingservice",
     "description": ":description",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
             "name": "author name",
@@ -18,7 +18,6 @@
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0",
-        "peterpetrus/passport-token": "*",
         "orchestra/testbench": "~3.0"
     },
     "autoload": {

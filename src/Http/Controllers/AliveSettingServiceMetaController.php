@@ -6,7 +6,7 @@
  * Date: 7/18/18
  * Time: 4:25 AM
  */
-namespace Alive2212\LaravelSettingService\Http\Controller;
+namespace Alive2212\LaravelSettingService\Http\Controllers;
 
 use Alive2212\LaravelSettingService\AliveSettingServiceMeta;
 use Alive2212\LaravelSmartRestful\BaseController;
