@@ -197,7 +197,7 @@ class LaravelSettingService
     }
 
     /**
-     *
+     * set Start Date Time
      *
      * @param Carbon $startDateTime
      * @return $this
@@ -217,7 +217,7 @@ class LaravelSettingService
     }
 
     /**
-     *
+     * Set Scope
      *
      * @param String $scope
      * @return $this

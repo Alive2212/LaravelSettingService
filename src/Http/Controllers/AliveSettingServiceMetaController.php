@@ -13,6 +13,7 @@ use Alive2212\LaravelSmartRestful\BaseController;
 
 class AliveSettingServiceMetaController extends BaseController
 {
+    protected $LOCALE_PREFIX = 'setting_service';
     /**
      * init controller model and middleware
      */
